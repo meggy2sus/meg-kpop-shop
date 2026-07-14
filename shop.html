@@ -1,188 +1,320 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-<title>Shop 💜 | Meg's K-Pop Shop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💜 Meg's K-Pop Shop 💜</title>
 
 <style>
 
-body {
-  background: #faf5ff;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  color: #555;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-h1 {
-  color: #a56cff;
-  font-size: 40px;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#faf5ff;
+    color:#555;
 }
 
-h2 {
-  color: #8b5bd6;
+header{
+    background:linear-gradient(135deg,#d8b4fe,#c084fc);
+    color:white;
+    text-align:center;
+    padding:45px 20px;
 }
 
-nav a {
-  margin: 10px;
-  text-decoration: none;
-  color: #8b5bd6;
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
 }
 
-.products {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+header p{
+    font-size:18px;
 }
 
-.card {
-  background: white;
-  width: 280px;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 25px;
-  box-shadow: 0 5px 15px #d9c8f5;
+nav{
+    background:white;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
 
-.photo img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 15px;
+nav a{
+    text-decoration:none;
+    color:#8b5bd6;
+    font-weight:bold;
+    margin:0 18px;
+    transition:.3s;
 }
 
-button {
-  background: #c8a8ff;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 16px;
+nav a:hover{
+    color:#a855f7;
 }
 
-button:hover {
-  background: #a56cff;
-  color: white;
+.products{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    padding:35px;
+}
+
+.card{
+    width:280px;
+    background:white;
+    border-radius:20px;
+    padding:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card img{
+    width:100%;
+    border-radius:15px;
+}
+
+.card h2{
+    margin-top:15px;
+    color:#8b5bd6;
+}
+
+.price{
+    color:#a855f7;
+    font-size:24px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+button{
+    width:100%;
+    background:#c084fc;
+    color:white;
+    border:none;
+    border-radius:25px;
+    padding:12px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#9333ea;
+}
+
+footer{
+    background:white;
+    margin-top:40px;
+    padding:40px;
+    text-align:center;
+}
+
+@media(max-width:700px){
+
+header h1{
+font-size:32px;
+}
+
+.products{
+padding:20px;
+}
+
+.card{
+width:100%;
+max-width:330px;
+}
+
 }
 
 </style>
 
 </head>
 
-
 <body>
 
-<nav>
-<a href="index.html">💜 Home</a>
-<a href="shop.html">🛍️ Shop</a>
-</nav>
-
+<header>
 
 <h1>💜 Meg's K-Pop Shop 💜</h1>
 
-<p>
-Official K-pop Photocards • Albums • Collectibles ✨
-</p>
+<p>Official K-pop Photocards • International Shipping 🌎</p>
 
+</header>
+
+<nav>
+
+<a href="index.html">🏠 Home</a>
+<a href="shop.html">🛍️ Shop</a>
+
+</nav>
 
 <div class="products">
 
+<!-- BTS -->
 
 <div class="card">
-<div class="photo">
-<img src="./bts.png">
-</div>
+
+<img src="./bts.png" alt="BTS">
+
 <h2>💜 BTS Photocard</h2>
+
 <p>Official BTS photocard.</p>
-<h3>$7 USD</h3>
-<button>💜 Buy Now</button>
+
+<div class="price">$7 USD</div>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeSTQ7Go6W3cXm1_rD2m4MyuGk7hvisd4-HFgR3dLXIdIiEPA/viewform?usp=header" target="_blank">
+
+<button>💜 Order Now 💜</button>
+
+</a>
+
 </div>
 
-
+<!-- Stray Kids -->
 
 <div class="card">
-<div class="photo">
-<img src="./straykids.png">
-</div>
+
+<img src="./straykids.png" alt="Stray Kids">
+
 <h2>💜 Stray Kids Photocard</h2>
+
 <p>Official Stray Kids photocard.</p>
-<h3>$7 USD</h3>
-<button>💜 Buy Now</button>
+
+<div class="price">$7 USD</div>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeSTQ7Go6W3cXm1_rD2m4MyuGk7hvisd4-HFgR3dLXIdIiEPA/viewform?usp=header" target="_blank">
+
+<button>💜 Order Now 💜</button>
+
+</a>
+
 </div>
 
-
+<!-- TXT -->
 
 <div class="card">
-<div class="photo">
-<img src="./txt.png">
-</div>
+
+<img src="./txt.png" alt="TXT">
+
 <h2>💜 TXT Photocard</h2>
+
 <p>Official TXT photocard.</p>
-<h3>$7 USD</h3>
-<button>💜 Buy Now</button>
+
+<div class="price">$7 USD</div>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeSTQ7Go6W3cXm1_rD2m4MyuGk7hvisd4-HFgR3dLXIdIiEPA/viewform?usp=header" target="_blank">
+
+<button>💜 Order Now 💜</button>
+
+</a>
+
 </div>
-
-
+<!-- NewJeans -->
 
 <div class="card">
-<div class="photo">
-<img src="./newjeans.png">
-</div>
+
+<img src="./newjeans.png" alt="NewJeans">
+
 <h2>💜 NewJeans Photocard</h2>
+
 <p>Official NewJeans photocard.</p>
-<h3>$7 USD</h3>
-<button>💜 Buy Now</button>
+
+<div class="price">$7 USD</div>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeSTQ7Go6W3cXm1_rD2m4MyuGk7hvisd4-HFgR3dLXIdIiEPA/viewform?usp=header" target="_blank">
+
+<button>💜 Order Now 💜</button>
+
+</a>
+
 </div>
 
-
+<!-- SEVENTEEN -->
 
 <div class="card">
-<div class="photo">
-<img src="./seventeen.png">
-</div>
+
+<img src="./seventeen.png" alt="SEVENTEEN">
+
 <h2>💜 SEVENTEEN Photocard</h2>
+
 <p>Official SEVENTEEN photocard.</p>
-<h3>$7 USD</h3>
-<button>💜 Buy Now</button>
+
+<div class="price">$7 USD</div>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeSTQ7Go6W3cXm1_rD2m4MyuGk7hvisd4-HFgR3dLXIdIiEPA/viewform?usp=header" target="_blank">
+
+<button>💜 Order Now 💜</button>
+
+</a>
+
 </div>
 
-
+<!-- TWICE -->
 
 <div class="card">
-<div class="photo">
-<img src="./twice.png">
-</div>
+
+<img src="./twice.png" alt="TWICE">
+
 <h2>💜 TWICE Photocard</h2>
+
 <p>Official TWICE photocard.</p>
-<h3>$7 USD</h3>
-<button>💜 Buy Now</button>
+
+<div class="price">$7 USD</div>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeSTQ7Go6W3cXm1_rD2m4MyuGk7hvisd4-HFgR3dLXIdIiEPA/viewform?usp=header" target="_blank">
+
+<button>💜 Order Now 💜</button>
+
+</a>
+
 </div>
 
-
+<!-- LE SSERAFIM -->
 
 <div class="card">
-<div class="photo">
-<img src="./leserafim.png">
-</div>
+
+<img src="./leserafim.png" alt="LE SSERAFIM">
+
 <h2>💜 LE SSERAFIM Photocard</h2>
+
 <p>Official LE SSERAFIM photocard.</p>
-<h3>$7 USD</h3>
-<button>💜 Buy Now</button>
+
+<div class="price">$7 USD</div>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeSTQ7Go6W3cXm1_rD2m4MyuGk7hvisd4-HFgR3dLXIdIiEPA/viewform?usp=header" target="_blank">
+
+<button>💜 Order Now 💜</button>
+
+</a>
+
 </div>
 
-
+<!-- ILLIT -->
 
 <div class="card">
-<div class="photo">
-<img src="./illit.png">
-</div>
+
+<img src="./illit.png" alt="ILLIT">
+
 <h2>💜 ILLIT Photocard</h2>
+
 <p>Official ILLIT photocard.</p>
-<h3>$7 USD</h3>
-<button>💜 Buy Now</button>
+
+<div class="price">$7 USD</div>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeSTQ7Go6W3cXm1_rD2m4MyuGk7hvisd4-HFgR3dLXIdIiEPA/viewform?usp=header" target="_blank">
+
+<button>💜 Order Now 💜</button>
+
+</a>
+
 </div>
 
-
+<!-- 3 Bundle -->
 
 <div class="card">
 
@@ -190,17 +322,21 @@ Official K-pop Photocards • Albums • Collectibles ✨
 
 <h2>✨ 3 Photocard Bundle</h2>
 
-<p>3 official K-pop photocards from available inventory.</p>
+<p>
+Receive 3 official K-pop photocards selected from available inventory.
+</p>
 
-<h3>$20 USD</h3>
+<div class="price">$20 USD</div>
 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSTQ7Go6W3cXm1_rD2m4MyuGk7hvisd4-HFgR3dLXIdIiEPA/viewform?usp=header" target="_blank">
+
 <button>💜 Order Now 💜</button>
+
 </a>
 
 </div>
 
-
+<!-- 5 Bundle -->
 
 <div class="card">
 
@@ -208,31 +344,83 @@ Official K-pop Photocards • Albums • Collectibles ✨
 
 <h2>✨ 5 Photocard Bundle</h2>
 
-<p>5 official K-pop photocards from available inventory.</p>
+<p>
+Receive 5 official K-pop photocards selected from available inventory.
+</p>
 
-<h3>$30 USD</h3>
+<div class="price">$30 USD</div>
 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSTQ7Go6W3cXm1_rD2m4MyuGk7hvisd4-HFgR3dLXIdIiEPA/viewform?usp=header" target="_blank">
+
 <button>💜 Order Now 💜</button>
+
 </a>
 
 </div>
-
-
 </div>
 
+<footer>
 
-<h2>🐱💜 About My Shop</h2>
+<h2>🐱 Support My Small Shop 💜</h2>
 
 <p>
-Hi! Thank you for visiting my small K-pop shop 💜
-<br><br>
-I sell official photocards to help support my cats and continue growing my collection.
-<br><br>
-Every purchase means a lot. Thank you for supporting my small business! ✨
+Hi! Thank you so much for visiting my shop! 💜
 </p>
 
+<p>
+I'm a K-pop collector selling official photocards to help support my cats and continue growing my collection.
+Every purchase truly means a lot to me, and I appreciate everyone who supports my small shop.
+</p>
+
+<br>
+
+<h2>📦 Shipping Information</h2>
+
+<p>
+🌎 International shipping is available.
+<br><br>
+Shipping costs are calculated based on your country and package size.
+<br><br>
+After you submit an order form, I'll contact you with your shipping total and payment instructions.
+</p>
+
+<br>
+
+<h2>❓ Frequently Asked Questions</h2>
+
+<p>
+<b>Are the photocards official?</b><br>
+Yes! Every photocard listed is official.
+</p>
+
+<br>
+
+<p>
+<b>How do I order?</b><br>
+Click <b>💜 Order Now 💜</b>, complete the Google Form, and I'll contact you by email with your order total and payment information.
+</p>
+
+<br>
+
+<p>
+<b>Can I request a specific member?</b><br>
+Absolutely! You can write your preferred member in the Google Form. I'll do my best to match your request based on availability.
+</p>
+
+<br>
+
+<p>
+<b>Do you ship internationally?</b><br>
+Yes! 🌎 Buyers are responsible for shipping costs.
+</p>
+
+<br><br>
+
+<p style="color:#8b5bd6;font-weight:bold;">
+Thank you for supporting my small business! 💜
+</p>
+
+</footer>
 
 </body>
-
 </html>
